@@ -5,14 +5,14 @@ export default function Home() {
     <div className="min-h-screen bg-background p-4 pb-6">
       <div className="h-full w-full border border-foreground">
         <div className="max-w-[1920px] mx-auto">
-          <header className="px-12 py-8">
-            <nav className="flex items-center justify-between">
-              <a href="/" className="block w-[40px]">
-                <div className="w-[40px] h-[25px] bg-gray-300" />
+          <header className="h-[115px]">
+            <nav className="flex items-center justify-between w-full h-full px-12">
+              <a href="/" className="block w-[139px]">
+                <div className="w-[139px] h-[50px] bg-gray-300" />
               </a>
 
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-8 font-roboto-mono text-[15px] uppercase tracking-[1px]">
+              <div className="flex items-center gap-6">
+                <div className="flex items-center gap-8 font-roboto-mono text-[13px] uppercase tracking-[1px]">
                   <a href="/services" className="nav-link">
                     Services
                   </a>
@@ -22,29 +22,33 @@ export default function Home() {
                   <a href="/studio" className="nav-link">
                     Studio
                   </a>
-                  <button className="nav-link flex items-center gap-0.5">
+                  <button className="nav-link flex items-center">
                     Pages
-                    <div className="w-[20px] h-[20px] bg-gray-300 ml-1" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                      <path d="m6 9 6 6 6-6"/>
+                    </svg>
                   </button>
-                  <button className="nav-link flex items-center gap-1">
+                  <button className="nav-link">
                     Cart (0)
                   </button>
                 </div>
 
-                <button className="button-primary">Let's Talk</button>
-
-                <div className="h-9 w-px bg-foreground mx-2" />
-
                 <div className="flex items-center gap-2">
-                  <a href="#" className="social-link">
-                    Tw
-                  </a>
-                  <a href="#" className="social-link">
-                    IN
-                  </a>
-                  <a href="#" className="social-link">
-                    Be
-                  </a>
+                  <button className="w-[6.88vw] h-[35.19px] bg-[#1C1C1C] text-white font-roboto-mono text-[13px] uppercase tracking-[1px] rounded-[6px] hover:opacity-90 transition-opacity">LET'S TALK</button>
+
+                  <div className="h-9 w-px bg-foreground mx-2" />
+
+                  <div className="flex items-center gap-2">
+                    <a href="#" className="font-roboto-mono text-[13px] uppercase tracking-[1px] border border-[#1C1C1C] rounded-full w-[32px] h-[32px] flex items-center justify-center hover:bg-[#1C1C1C] hover:text-white transition-colors">
+                      TW
+                    </a>
+                    <a href="#" className="font-roboto-mono text-[13px] uppercase tracking-[1px] border border-[#1C1C1C] rounded-full w-[32px] h-[32px] flex items-center justify-center hover:bg-[#1C1C1C] hover:text-white transition-colors">
+                      IN
+                    </a>
+                    <a href="#" className="font-roboto-mono text-[13px] uppercase tracking-[1px] border border-[#1C1C1C] rounded-full w-[32px] h-[32px] flex items-center justify-center hover:bg-[#1C1C1C] hover:text-white transition-colors">
+                      BE
+                    </a>
+                  </div>
                 </div>
               </div>
             </nav>

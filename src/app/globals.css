@@ -47,11 +47,11 @@
 
 @layer components {
   .nav-link {
-    @apply font-roboto-mono text-[15px] uppercase tracking-[1px] hover:opacity-80 transition-opacity;
+    @apply font-roboto-mono text-[15px] uppercase tracking-[1px] hover:opacity-80 transition-opacity relative;
   }
 
   .social-link {
-    @apply h-8 w-8 rounded-2xl border border-foreground flex items-center justify-center font-roboto-mono text-[13px] uppercase;
+    @apply h-8 w-8 rounded-[10px] border border-foreground flex items-center justify-center font-roboto-mono text-[13px] uppercase hover:bg-foreground hover:text-background transition-all;
   }
 
   .section-title {
