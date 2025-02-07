@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        syne: ["var(--font-syne)"],
+        satoshi: ["var(--font-satoshi)"],
+        "roboto-mono": ["var(--font-roboto-mono)"],
+      },
     },
   },
   plugins: [],
