@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background p-4 pb-6">
+    <div className="min-h-screen bg-background p-4">
       <div className="h-full w-full border border-foreground">
         <div className="max-w-[1920px] mx-auto">
           <header className="h-[115px]">
@@ -88,7 +88,7 @@ export default function Home() {
 
             <section className="mt-16">
               <div className="flex justify-between items-center">
-                <h2 className="font-roboto-mono text-[15px] uppercase tracking-[1px]">
+                <h2 className="nav-link">
                   Our Clients
                 </h2>
                 <div className="w-px h-20 bg-foreground" />
@@ -107,7 +107,7 @@ export default function Home() {
 
             <section className="mt-16">
               <div className="flex justify-between items-start">
-                <h2 className="font-roboto-mono text-[15px] uppercase tracking-[1px]">
+                <h2 className="nav-link">
                   What we do
                 </h2>
                 <div className="w-px h-[312px] bg-foreground" />
@@ -329,7 +329,7 @@ export default function Home() {
             <section className="mt-16">
               <div className="grid grid-cols-[2fr_1fr] gap-16">
                 <div>
-                  <span className="font-roboto-mono text-[15px] uppercase tracking-[1px]">
+                  <span className="nav-link">
                     Contact
                   </span>
                   <h2 className="font-syne text-[96px] leading-[96px] mt-3">
@@ -371,7 +371,7 @@ export default function Home() {
                 <article>
                   <a href="#" className="block">
                     <div className="w-full h-[290px] bg-gray-300 rounded-2xl" />
-                    <span className="font-roboto-mono text-[15px] uppercase tracking-[1px] mt-4 block">
+                    <span className="nav-link mt-4 block">
                       Branding
                     </span>
                     <h3 className="font-syne text-[24px] leading-[31px] mt-4">
@@ -384,7 +384,7 @@ export default function Home() {
                 <article>
                   <a href="#" className="block">
                     <div className="w-full h-[290px] bg-gray-300 rounded-2xl" />
-                    <span className="font-roboto-mono text-[15px] uppercase tracking-[1px] mt-4 block">
+                    <span className="nav-link mt-4 block">
                       Branding
                     </span>
                     <h3 className="font-syne text-[24px] leading-[31px] mt-4">
@@ -397,7 +397,7 @@ export default function Home() {
                 <article>
                   <a href="#" className="block">
                     <div className="w-full h-[290px] bg-gray-300 rounded-2xl" />
-                    <span className="font-roboto-mono text-[15px] uppercase tracking-[1px] mt-4 block">
+                    <span className="nav-link mt-4 block">
                       Branding
                     </span>
                     <h3 className="font-syne text-[24px] leading-[31px] mt-4">
@@ -463,43 +463,43 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-16">
                   <div>
                     <h3 className="font-syne text-[24px]">CMS</h3>
-                    <nav className="mt-10 flex flex-col gap-3">
-                      <a href="#" className="nav-link">
+                    <nav className="footer-nav mt-10">
+                      <a href="#">
                         Work
                       </a>
-                      <a href="#" className="nav-link">
+                      <a href="#">
                         Work Single
                       </a>
-                      <a href="#" className="nav-link">
+                      <a href="#">
                         Blog
                       </a>
-                      <a href="#" className="nav-link">
+                      <a href="#">
                         Blog Post
                       </a>
-                      <a href="#" className="nav-link">
+                      <a href="#">
                         Shop
                       </a>
-                      <a href="#" className="nav-link">
+                      <a href="#">
                         Shop Single
                       </a>
                     </nav>
                   </div>
                   <div>
                     <h3 className="font-syne text-[24px]">Utility Pages</h3>
-                    <nav className="mt-9 flex flex-col gap-3">
-                      <a href="#" className="nav-link">
+                    <nav className="footer-nav mt-9">
+                      <a href="#">
                         404 Error Page
                       </a>
-                      <a href="#" className="nav-link">
+                      <a href="#">
                         Password Protected
                       </a>
-                      <a href="#" className="nav-link">
+                      <a href="#">
                         Styleguide
                       </a>
-                      <a href="#" className="nav-link">
+                      <a href="#">
                         Licensing
                       </a>
-                      <a href="#" className="nav-link">
+                      <a href="#">
                         Changelog
                       </a>
                     </nav>
@@ -512,14 +512,14 @@ export default function Home() {
 
             <div className="mt-12 flex justify-between items-center font-roboto-mono text-[15px] uppercase tracking-[1px]">
               <div className="flex gap-6">
-                <p>© Made by Pawel Gola</p>
-                <p>- Powered by Webflow</p>
+                <p className="nav-link">© Made by Pawel Gola</p>
+                <p className="nav-link">- Powered by Webflow</p>
               </div>
               <div className="flex gap-8">
-                <a href="#" className="hover:underline">
+                <a href="#" className="nav-link">
                   Privacy
                 </a>
-                <a href="#" className="hover:underline">
+                <a href="#" className="nav-link">
                   Imprint
                 </a>
               </div>

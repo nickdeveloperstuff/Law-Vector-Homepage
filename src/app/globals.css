@@ -21,7 +21,7 @@
 @font-face {
   font-family: "Roboto Mono";
   src: url("/fonts/RobotoMono-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -47,7 +47,28 @@
 
 @layer components {
   .nav-link {
-    @apply font-roboto-mono text-[15px] uppercase tracking-[1px] hover:opacity-80 transition-opacity relative;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(25, 25, 25);
+    cursor: pointer;
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 300;
+    height: 27.2031px;
+    letter-spacing: 0.5px;
+    line-height: 27.2px;
+    text-decoration-color: rgb(25, 25, 25);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 0;
+    transition: opacity 0.2s ease;
+    position: relative;
   }
 
   .social-link {
@@ -59,22 +80,78 @@
     @apply md:text-[40px];
   }
 
+  /* Base button styles */
+  .button-base {
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 27.2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 0;
+    transition: opacity 0.2s ease;
+  }
+
   .button-primary {
-    @apply rounded-md bg-foreground text-background px-4 py-2.5 font-roboto-mono text-[15px] uppercase tracking-[1px] hover:opacity-90 transition-opacity;
+    @apply button-base rounded-md bg-foreground text-background px-4 py-2.5 hover:opacity-90 transition-opacity;
   }
 
   .button-secondary {
-    @apply rounded-md border border-foreground px-4 py-2.5 font-roboto-mono text-[15px] uppercase tracking-[1px] hover:bg-gray-100 transition-colors;
+    @apply button-base rounded-md border border-foreground px-4 py-2.5 hover:bg-gray-100 transition-colors;
   }
 
   .divider {
     @apply w-full h-px bg-foreground;
+  }
+
+  .footer-nav {
+    @apply flex flex-col items-start;
+    gap: 16px;
+  }
+
+  .footer-nav a {
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(25, 25, 25);
+    cursor: pointer;
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 300;
+    height: 27.2031px;
+    letter-spacing: 0.5px;
+    line-height: 27.2px;
+    text-decoration-color: rgb(25, 25, 25);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .footer-nav a:hover {
+    opacity: 0.8;
   }
 }
 
 @layer utilities {
   .font-syne {
     font-family: var(--font-syne);
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    font-weight: 400;
   }
 
   .font-satoshi {
